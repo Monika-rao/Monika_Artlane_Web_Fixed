@@ -1,0 +1,563 @@
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Niconne', cursive;
+}
+
+body {
+    background-color: #b89dbaee;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: #5e4f62f5;
+    padding: 18px;
+    box-shadow: 0 2px 5px rgba(137, 69, 147, 0.5);
+}
+
+.logo h1 {
+    font-size: 2.5rem;
+    color: rgb(184, 184, 232);
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+ul li a {
+    color: rgb(218, 214, 220);
+    font-size: 1.3rem;
+    text-decoration: none;
+}
+
+ul li a:hover {
+    border-bottom: 2px solid black;
+}
+
+.main {
+    display: flex;
+    align-items: center;
+    padding: 50px 0;
+}
+
+.mainText h1 {
+    font-size: 2.5rem;
+    color: rgba(64, 39, 60, 0.8);
+}
+
+.mainText .top {
+    color: rgb(243, 246, 246);
+}
+
+.mainText button {
+    background-color: rgb(4, 140, 140);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Sections */
+/* .trend, .about, .contact, .cart {
+    display: none; /* Hidden by default */
+
+
+/* Responsive */
+/* @media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+    .main {
+        flex-direction: column;
+    }
+} */ 
+
+/* ===== GLOBAL RESET & BASE STYLES ===== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Niconne', cursive, sans-serif;
+    background-color: #b89dbaee;
+    line-height: 1.6;
+    color: #333;
+  }
+  
+  /* ===== NAVBAR ===== */
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #5e4f62f5;
+    padding: 1rem 2rem;
+    box-shadow: 0 2px 10px rgba(137, 69, 147, 0.8);
+  }
+  
+  .logo h1 {
+    font-size: 2.5rem;
+    font-weight: 500;
+    color: rgb(184, 184, 232);
+    margin-left: 1rem;
+  }
+  
+  nav ul {
+    display: flex;
+    list-style: none;
+    gap: 2.5rem; /* Increased from 2rem */
+    margin-right: 2rem;
+    padding: 0.8rem 0; /* Added vertical padding */
+  }
+  
+  nav ul li a {
+    font-size: 1.5rem;
+    color: rgb(218, 214, 220);
+    text-decoration: none;
+    transition: all 0.3s ease;
+    font-weight: 500;
+    padding: 0.5rem 1rem; /* Added individual item padding */
+    display: inline-block; /* Ensures padding works correctly */
+  }
+  
+  nav ul li a:hover {
+    border-bottom: 2px solid black;
+    color: #fff;
+  }
+  
+  nav ul li i {
+    font-size: 1.4rem;
+    color: rgb(218, 214, 220);
+    transition: all 0.3s ease;
+  }
+  
+  nav ul li i:hover {
+    color: gray;
+    transform: scale(1.1);
+    margin-left: 1.5rem; /* Space before cart icon */
+    vertical-align: middle;
+  }
+  
+  
+  /* ===== MAIN HERO SECTION ===== */
+  .main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4rem 2rem;
+  }
+
+  .main img {
+    mask-image: linear-gradient(
+      to right,
+      rgba(0,0,0,1) 60%,
+      rgba(0,0,0,0) 100%
+    );
+    -webkit-mask-image: linear-gradient(
+      to right,
+      rgba(0,0,0,1) 60%,
+      rgba(0,0,0,0) 100%
+    );
+
+    mask-image: linear-gradient(
+      to left,
+      rgba(0,0,0,1) 60%,
+      rgba(0,0,0,0) 100%
+    );
+    -webkit-mask-image: linear-gradient(
+      to left,
+      rgba(0,0,0,1) 60%,
+      rgba(0,0,0,0) 100%
+    );
+  }
+  
+  
+  .mainText {
+    flex: 1;
+    padding-right: 3rem;
+  }
+  
+  .mainText h1 {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+    font-weight: 500;
+  }
+  
+  .mainText .top {
+    color: rgb(243, 246, 246);
+    font-size: 3.5rem;
+  }
+
+  .mainText h1.top {
+     margin-top: 0;  /* Removes top margin completely */
+     padding-top: 10px;  /* Adds minimal padding if needed */
+     line-height: 1.2;  /* Tightens line spacing */
+}
+
+  
+  .mainText p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    color: rgba(88, 44, 80, 0.8);
+  }
+  
+  .mainText button {
+    padding: 0.8rem 2rem;
+    font-size: 1.2rem;
+    background-color: rgb(4, 140, 140);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .mainText button:hover {
+    background-color: transparent;
+    color: rgb(2, 121, 121);
+    border: 3px solid rgb(3, 128, 128);
+  }
+  
+  .main img {
+    flex: 1;
+    max-width: 50%;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* ===== ARTWORKS SECTION ===== */
+  .trend {
+    padding: 4rem 2rem;
+  }
+  
+  .head {
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+  
+  .head h1 {
+    font-size: 3rem;
+    font-weight: 500;
+  }
+  
+  .head span {
+    color: rgb(2, 164, 164);
+  }
+  
+  .card {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 0 1rem;
+  }
+  
+  .crd {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .crd:hover {
+    transform: translateY(-10px);
+  }
+  
+  .crd img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .crdText {
+    padding: 1.5rem;
+  }
+  
+  .crdText h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    font-weight: 500;
+  }
+  
+  .crdText .stars {
+    margin-bottom: 1rem;
+  }
+  
+  .crdText .stars i {
+    color: rgb(255, 149, 0);
+    font-size: 1.2rem;
+  }
+  
+  .crdText button {
+    width: 100%;
+    padding: 0.8rem;
+    background-color: rgb(5, 141, 141);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .crdText button:hover {
+    background-color: rgb(3, 110, 110);
+  }
+  
+  /* ===== ABOUT SECTION ===== */
+  .about {
+    padding: 4rem 2rem;
+    display: none; /* Hidden by default */
+  }
+  
+  .aboutus {
+    background-color: rgb(1, 1, 42);
+    color: white;
+    padding: 3rem;
+    text-align: center;
+    margin-bottom: 3rem;
+    border-radius: 10px;
+  }
+  
+  .aboutus h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .aboutus p {
+    font-size: 1.3rem;
+  }
+  
+  .me {
+    display: flex;
+    align-items: center;
+    background: white;
+    border-radius: 15px;
+    padding: 2rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .me img {
+    width: 50%;
+    border-radius: 10px;
+    margin-right: 2rem;
+  }
+  
+  .aboutText h1 {
+    font-size: 2.2rem;
+    margin-bottom: 1.5rem;
+    font-weight: 500;
+  }
+  
+  .aboutText p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+  }
+  
+  /* ===== CONTACT SECTION ===== */
+  .contact {
+    padding: 4rem 2rem;
+    display: none; /* Hidden by default */
+  }
+  
+  .contactus {
+    background-color: rgb(1, 1, 42);
+    color: white;
+    padding: 3rem;
+    text-align: center;
+    margin-bottom: 3rem;
+    border-radius: 10px;
+  }
+  
+  .contactus h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .contactus p {
+    font-size: 1.3rem;
+  }
+  
+  .contactMe {
+    display: flex;
+    align-items: center;
+    background: white;
+    border-radius: 15px;
+    padding: 2rem;
+    margin-bottom: 3rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .contactMe img {
+    width: 50%;
+    border-radius: 10px;
+    margin-left: 2rem;
+  }
+  
+  .contactText h1 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    font-weight: 500;
+  }
+  
+  .contactText p {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .form {
+    background: white;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .form h1 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    font-weight: 500;
+  }
+  
+  .form input {
+    width: 100%;
+    max-width: 500px;
+    padding: 0.8rem;
+    margin-bottom: 1.5rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  
+  .form button {
+    padding: 0.8rem 2rem;
+    background-color: rgb(2, 54, 54);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .form button:hover {
+    background-color: rgb(1, 40, 40);
+  }
+  
+  /* ===== FOOTER ===== */
+  .footer {
+    background-color: #5e4f62f5;
+    color: white;
+    padding: 3rem 2rem;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .footerText {
+    margin: 1rem;
+    min-width: 200px;
+  }
+  
+  .footerText h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    font-weight: 500;
+  }
+  
+  .footerText p {
+    font-size: 1.1rem;
+    margin-bottom: 0.8rem;
+  }
+  
+  /* ===== RESPONSIVE DESIGN ===== */
+  @media (max-width: 992px) {
+    .main {
+      flex-direction: column;
+      text-align: center;
+    }
+    
+    .mainText {
+      padding-right: 0;
+      margin-bottom: 2rem;
+    }
+    
+    .main img {
+      max-width: 80%;
+    }
+    
+    .me, .contactMe {
+      flex-direction: column;
+    }
+    
+    .me img, .contactMe img {
+      width: 100%;
+      margin-right: 0;
+      margin-bottom: 2rem;
+      margin-left: 0;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    nav {
+      flex-direction: column;
+      padding: 1rem;
+    }
+    
+    .logo h1 {
+      margin-left: 0;
+      margin-bottom: 1rem;
+    }
+    
+    nav ul {
+      margin-right: 0;
+      gap: 1rem;
+    }
+    
+    .mainText h1 {
+      font-size: 2.5rem;
+    }
+    
+    .mainText .top {
+      font-size: 3rem;
+    }
+    
+    .head h1 {
+      font-size: 2.5rem;
+    }
+    
+    .card {
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .mainText h1 {
+      font-size: 2rem;
+    }
+    
+    .mainText .top {
+      font-size: 2.5rem;
+    }
+    
+    .mainText p {
+      font-size: 1.2rem;
+    }
+    
+    .head h1 {
+      font-size: 2rem;
+    }
+    
+    .footer {
+      flex-direction: column;
+      text-align: center;
+    }
+  }
